@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
-    DOCKERHUB_CREDENTIALS = credentials('shinyora-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('yokoshin12-dockerhub')
   }
   stages {
     stage('Build') {
